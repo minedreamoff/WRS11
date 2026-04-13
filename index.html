@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 11 Simulator</title>
+    <style>
+        body {
+            background-color: #F4F4F4;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #desktop {
+            width: 100%;
+            height: calc(100vh - 40px);
+            background-color: #1E1E1E;
+            position: relative;
+        }
+        #taskbar {
+            height: 40px;
+            background-color: #3C3C3C;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .icon {
+            width: 50px;
+            height: 50px;
+            background-color: #0078D4;
+            border-radius: 8px;
+            margin: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div id="desktop">
+        <div class="icon" title="File Explorer"></div>
+        <div class="icon" title="Settings"></div>
+        <div class="icon" title="Microsoft Store"></div>
+    </div>
+    <div id="taskbar">
+        <div>Start</div>
+        <div style="flex-grow: 1;"></div>
+        <div>Search</div>
+    </div>
+</body>
+</html>
